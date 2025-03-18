@@ -39,7 +39,7 @@ x_new = [[5.1, 3.5, 1.4, 0.2]]
 x_new_scaled = pre.transform(x_new)  # 标准化新数据
 y_new_pred = best_model.predict(x_new_scaled)
 
-#模型评估(对测试集进行模型评估)
+#6.模型评估(对测试集进行模型评估)
 y_test_pred = best_model.predict(x_test)
 print(accuracy_score(y_test,y_test_pred))
 
